@@ -5,13 +5,18 @@
 VAR
 	a:BOOL;
 	b:INT;
+	dut:DUT;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[a:=TRUE;]]></ST>
+      <ST><![CDATA[a:=TRUE;
+b:=11;
+GVL.g:=TRUE;
+dut.cc:=FALSE;]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
+      <LineId Id="8" Count="2" />
     </LineIds>
   </POU>
 </TcPlcObject>
